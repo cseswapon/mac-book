@@ -1,3 +1,43 @@
+/* worning message */
 #worng-promo{
-    display: none;
+    visibility: hidden;
+}
+/* image animaion */
+@keyframes image{
+    0%{
+        transform: translateX(-900px) ;
+        visibility:visible;
+    }
+    100%{
+        transform:translateX(0);
+        visibility: visible;
+    }
+}
+.image{
+    animation: image 3s ease-in-out 0s 1 alternate forwards;
+}
+@keyframes form{
+    0%{
+        transform: translateX(1100px) ;
+        visibility:hidden;
+    }
+    100%{
+        transform:translateX(0);
+        visibility: visible;
+    }
+}
+.form{
+    animation: form 3s ease-in-out 2s 1 alternate backwards;
+}
+@keyframes total{
+    0%{
+        transform: translateX(-900px);
+        visibility: hidden;
+    }100%{
+        transform: translateX(0px);
+        visibility: visible;
+    }
+}
+.total{
+    animation: total 3s ease-in-out 4s 1 alternate backwards;
 }

@@ -82,10 +82,10 @@ document.getElementById('submit').addEventListener("click", function ()
         const price = totalPriceValue - discount;
         totalPrice.innerText = price.toFixed(2);
         document.getElementById('submit').setAttribute('disabled', true);
-        document.getElementById('worng-promo').style.display = "none";
+        document.getElementById('worng-promo').style.visibility = "hidden";
         promoBox.value = '';
     } else {
-        document.getElementById('worng-promo').style.display = "block";
+        document.getElementById('worng-promo').style.visibility = "visible";
         promoBox.value = '';
     }
 })
