@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web title -->
+    <title>Macbook computer</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <section class="container my-5">
+            <div class="row justify-content-between g-5">
+                <div class="col-5">
+                    <img class="img-fluid" src="images/mac.png" alt="">
+                </div>
+                <div class="col-7">
+                    <div>
+                        <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                        <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU,
+                            and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports
+                            Magic Mouse Magic Keyboard-US English</p>
+                    </div>
+                    <!---------------------------
+                     memory section start
+                    ---------------------------->
+                    <div class="mt-5">
+                        <h5 class=" fw-bold">Memory</h5>
+                        <button id="memory-8GB" type="button" class="btn btn-outline-primary">8GB unified
+                            memory</button>
+                        <button id="memory-16GB" type="button" class="btn btn-outline-primary">16GB unified
+                            memory</button>
+                    </div>
+                    <!----------------------- 
+                    stroage section start
+                    ------------------------->
+                    <div class="mt-5">
+                        <h5 class=" fw-bold">Storage</h5>
+                        <button id="storage-256" type="button" class="btn btn-outline-primary">256GB SSD
+                            storage</button>
+                        <button id="storage-512" type="button" class="btn btn-outline-primary">512GB SSD
+                            storage</button>
+                        <button id="storage-1TB" type="button" class="btn btn-outline-primary">1TB SSD
+                            storage</button>
+                    </div>
+                    <!------------------------
+                     Delivery section start
+                    ------------------------->
+                    <div class="mt-5">
+                        <h5 class="fw-bold">Choose your delivery options</h5>
+                        <button id="free-delivery" type="button" class="btn btn-outline-primary">Friday, Aug 25 Free
+                            Premium Delivery</button>
+                        <button id="charged-delivery" type="button" class="btn btn-outline-primary">Friday, Aug 21
+                            Delivery Charge $20</button>
+                    </div>
+                    <!------------------------
+                     price section
+                    --------------------------->
+                    <div class="mt-5">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Best Price</th>
+                                    <th>$<span id="best-price">1299</span></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Extra Memory Cost</th>
+                                    <th>$<span id="memory-cost">0</span></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Extra Storage Cost</th>
+                                    <th>$<span id="storage-cost">0</span></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Delivery Charge</th>
+                                    <th>$<span id="delivery-cost">0</span></th>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <th scope="row">Total Price</th>
+                                <th>$<span id="total-price">1299</span></th>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!--------------------
+                    add promo code input 
+                    ---------------------->
+                    <div class="row g-3 mt-5">
+                        <p class="fs-3 fw-bolder text-primary">Add Promo code</p>
+                        <div class="col-auto">
+                            <input type="text" class="form-control border-end" id="promo-submit"
+                                placeholder="Promocode Use">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" id="submit" class="btn btn-outline-danger mb-3">Apply</button>
+                        </div>
+                        <p class="text-danger" id="worng-promo">Worng Promocode</p>
+                    </div>
+                </div>
+            </div>
+            <hr class=" bg-primary">
+        </section>
+    </main>
+    <footer>
+        <p class=" fs-1 fw-bolder  text-center text-muted mt-0">Total : $ <span id="total">1299</span> </p>
+    </footer>
+    <!-- javaScript file -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
